@@ -5,7 +5,6 @@
     user then starts over with guessing using new crystal values*/
 
 //Wait for everything to be ready on the page before starting
-//Reset function for the game:
 $(document).ready(function(event) {
     
     //Global variables for the game.
@@ -14,12 +13,12 @@ $(document).ready(function(event) {
     var red = parseInt(Math.floor(Math.random() * 12) + 1);
     var blue = parseInt(Math.floor(Math.random() * 12) + 1);
     var pink = parseInt(Math.floor(Math.random() * 12) + 1);
-    var purple = parseInt(Math.floor(Math.random() * 12) + 1);
-    
+    var purple = parseInt(Math.floor(Math.random() * 12) + 1); 
     var wins = 0;
     var losses = 0;
     var totalScore = 0;
     
+    //Reset function to get the game back to the start after a user wins or looses.
     function resetGame() {
         computerPick = Math.floor(Math.random() * 100) + 19;
             $('#computer-pick').text(computerPick);
@@ -30,14 +29,12 @@ $(document).ready(function(event) {
         pink = parseInt(Math.floor(Math.random() * 12) + 1);
         purple = parseInt(Math.floor(Math.random() * 12) + 1);
     }
-    
+
+    //Each crystal has it's own function and if/else for the gameplay.
         $("#button-red").on("click", function() {
-            
-            if (totalScore === computerPick) {
-                wins++;
-                    $("#wins").text(wins);
-                resetGame ();
-            }
+            console.log(red)
+            totalScore += red;
+                $('#total-score').text(totalScore);
             
             if (totalScore > computerPick) {
                 losses++;
@@ -45,9 +42,11 @@ $(document).ready(function(event) {
                 resetGame ();
             }
             
-            console.log(red)
-            totalScore += red;
-                $('#total-score').text(totalScore);
+            if (totalScore === computerPick) {
+                wins++;
+                    $("#wins").text(wins);
+                resetGame ();
+            }
         })
         
         $("#button-blue").on("click", function() {
@@ -55,18 +54,17 @@ $(document).ready(function(event) {
             totalScore += blue;
                 $('#total-score').text(totalScore);
 
-            if (totalScore === computerPick) {
-                wins++;
-                    $("#wins").text(wins);
-                resetGame ();
-            }
-            
             if (totalScore > computerPick) {
                 losses++;
                     $("#losses").text(losses);
                 resetGame ();
             }
 
+            if (totalScore === computerPick) {
+                wins++;
+                    $("#wins").text(wins);
+                resetGame ();
+            }
         })
         
         $("#button-pink").on("click", function() {
@@ -74,18 +72,17 @@ $(document).ready(function(event) {
             totalScore += pink;
                 $('#total-score').text(totalScore);
 
-            if (totalScore === computerPick) {
-                wins++;
-                    $("#wins").text(wins);
-                resetGame ();
-            }
-            
             if (totalScore > computerPick) {
                 losses++;
                     $("#losses").text(losses);
                 resetGame ();
             }
-
+            
+            if (totalScore === computerPick) {
+                wins++;
+                    $("#wins").text(wins);
+                resetGame ();
+            }
         })
         
         $("#button-purple").on("click", function() {
@@ -93,23 +90,18 @@ $(document).ready(function(event) {
             totalScore += purple;
                 $('#total-score').text(totalScore);
             
-            if (totalScore === computerPick) {
-                wins++;
-                    $("#wins").text(wins);
-                resetGame ();
-            }
-            
             if (totalScore > computerPick) {
                 losses++;
                     $("#losses").text(losses);
                 resetGame ();
             }
-        })
-        
-    
-       /* $("#losses").text(losses);
-        $('#wins').text(wins);
-        $('#total-score').text(totalScore);*/
-        
+
+            if (totalScore === computerPick) {
+                wins++;
+                    $("#wins").text(wins);
+                resetGame ();
+            } 
+        })        
     })   
+    
     
