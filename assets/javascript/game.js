@@ -10,8 +10,8 @@
 //Global variables for the game.
     var computerPick = Math.floor(Math.random() * 100) + 19;
         console.log(computerPick);
-    var crystal = Math.floor(Math.random() * 12) + 1;
-        console.log(crystal);
+    //var crystal = Math.floor(Math.random() * 12) + 1;
+      //  console.log(crystal);
         //not sure, yet, if i will need to make a random for each colored crystal or if i can just use this.
     var red = parseInt(Math.floor(Math.random() * 12) + 1);
     var blue = parseInt(Math.floor(Math.random() * 12) + 1);
@@ -40,7 +40,32 @@
 
     $("#button-red").on("click", function() {
         console.log(red)
+        totalScore = red + totalScore;
+        $('#total-score').text(totalScore);
+        console.log(totalScore);
+
+    })
+
+    $("#button-blue").on("click", function() {
+        console.log(blue)
+        totalScore = blue + totalScore;
+        $('#total-score').text(totalScore);
+
+    })
+
+    $("#button-pink").on("click", function() {
+        console.log(pink)
+        totalScore = pink + totalScore;
+        $('#total-score').text(totalScore);
+
+    })
+
+    $("#button-purple").on("click", function() {
+        console.log(purple)
+        totalScore = purple + totalScore;
+        $('#total-score').text(totalScore);
+
     })
     
-    
+
     })   
