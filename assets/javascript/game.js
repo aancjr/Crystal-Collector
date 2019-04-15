@@ -13,6 +13,11 @@
     var crystal = Math.floor(Math.random() * 12) + 1;
         console.log(crystal);
         //not sure, yet, if i will need to make a random for each colored crystal or if i can just use this.
+    var red = parseInt(Math.floor(Math.random() * 12) + 1);
+    var blue = parseInt(Math.floor(Math.random() * 12) + 1);
+    var pink = parseInt(Math.floor(Math.random() * 12) + 1);
+    var purple = parseInt(Math.floor(Math.random() * 12) + 1);
+
     var wins = 0;
     var losses = 0;
     var totalScore = 0;
@@ -26,24 +31,16 @@
     //Reset function for the game:
     function reset() {
         computerPick;
-        red = Math.floor(Math.random() * 12) + 1;
-        console.log(red);
-        blue = Math.floor(Math.random() * 12) + 1;
-        console.log(blue);
-        pink = Math.floor(Math.random() * 12) + 1;
-        console.log(pink);
-        purple = Math.floor(Math.random() * 12) + 1;
-        console.log(purple);
+        red;
+        blue;
+        pink;
+        purple;
         totalScore = 0;
     }
 
-    $(".crystal").on("click", function() {
-        console.log($(this).val());
-
-
+    $("#button-red").on("click", function() {
+        console.log(red)
     })
-        
-
-
-
+    
+    
     })   
