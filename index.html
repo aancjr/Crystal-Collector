@@ -6,48 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector!</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 
+    <section class="header">
+        <section class="row">
+            <h1 id="game-title">Crystal Collector!</h1>
+        </section>
+    </section>
+    
     <section class="container">
-        <h1 id="game-title">Crystal Collector!</h1>
+        <section class="row">
+            <section class="instructions">
+                <p id="game-details">You will be given a random number at the start of the game.
+                    <br>
+                    There are four crystals below. By clicking on crystal you will add a specific amount
+                    of points to your total score.
+                    <br>
+                    You win the game by matching your total score to random number, you lose the game if your
+                    total score goes above the random number.
+                    <br>
+                    The value of each crystal is hidden from you until you click on it.
+                    <br>
+                    Each time when the game starts, the game will change the values of each crystal.
+                </p>
+            </section>
+        </section>
 
-        <p id="game-details">You will be given a random number at the start of the game.
-            <br>
-            There are four crystals below. By clicking on crystal you will add a specific amount
-            of points to your total score.
-            <br>
-            You win the game by matching your total score to random number, you lose the game if your
-            total score goes above the random number.
-            <br>
-            The value of each crystal is hidden from you until you click on it.
-            <br>
-            Each time when the game starts, the game will change the values of each crystal.
-        </p>
+        <section class="row">
+            <section class="comp-wins-losses">
+                <section class="col-md-4">
+                    <h2 id="computer-pick"></h2>
+                </section>
+                <section class="col-md-4">
+                    <p id="wins">Wins:</p>
+                </section>
+                <section class="col-md-4">
+                    <p id="losses">Losses:</p>
+                </section>
+            </section>
+        </section>
 
-        <h2 id="computer-pick">Computer Pick:</h2>
-        <p id="wins">Wins:</p>
-        <p id="losses">Losses:</p>
-
-        <div class="crystal-body">
-            <button id="button-red" class="btn btn-primary crystal" value="red">
-                <img id="redcrys" src="assets/images/red.png">
-            </button>
-            <button id="button-blue" class="btn btn-primary crystal" value="blue">
-                <img id="bluecrys" src="assets/images/blue.png">
-            </button>
-            <button id="button-pink" class="btn btn-primary crystal" value="pink">  
-                <img id="pinkcrys" src="assets/images/pink.png">
-            </button>
-            <button id="button-purple" class="btn btn-primary crystal" value="purple">
-                <img id="purplecrys" src="assets/images/purple.png">
-            </button>
-        </div>
-        
-        <h3 id="score">Your total score is:</h3> <h2 id="total-score"></h2>
+        <section class="row">
+            <section class="crystal-body">
+                <section class="crystals">
+                    <button id="button-red" class="btn btn-primary crystal" value="red">
+                        <img id="redcrys" src="assets/images/red.png">
+                    </button>
+                    <button id="button-blue" class="btn btn-primary crystal" value="blue">
+                        <img id="bluecrys" src="assets/images/blue.png">
+                    </button>
+                    <button id="button-pink" class="btn btn-primary crystal" value="pink">  
+                        <img id="pinkcrys" src="assets/images/pink.png">
+                    </button>
+                    <button id="button-purple" class="btn btn-primary crystal" value="purple">
+                        <img id="purplecrys" src="assets/images/purple.png">
+                    </button>
+                </section>
+            </section>
+        </section>
+            
+        <h2 id="total-score">Total Score: </h2>
     </section>
 
 </body>
