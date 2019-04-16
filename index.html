@@ -7,6 +7,7 @@
     <title>Crystal Collector!</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -18,9 +19,9 @@
         </section>
     </section>
     
-    <section class="container">
-        <section class="row">
-            <section class="instructions">
+    <section class="instructions">
+        <section class="container">
+            <section class="row">
                 <p id="game-details">You will be given a random number at the start of the game.
                     <br>
                     There are four crystals below. By clicking on crystal you will add a specific amount
@@ -36,35 +37,39 @@
             </section>
         </section>
 
-        <section class="row">
-            <section class="comp-wins-losses">
-                <section class="col-md-4">
-                    <h2 id="computer-pick"></h2>
-                </section>
-                <section class="col-md-4">
-                    <p id="wins">Wins:</p>
-                </section>
-                <section class="col-md-4">
-                    <p id="losses">Losses:</p>
+        <section class="comp-wins-losses">
+            <section class="container">
+                <section class="row">
+                    <section class="col-md-6">
+                        <h3 id="computer-pick"></h3>
+                    </section>
+                    <section class="col-md-3">
+                        <h3 id="wins">Wins:</h3>
+                    </section>
+                    <section class="col-md-3">
+                        <h3 id="losses">Losses:</h3>
+                    </section>
                 </section>
             </section>
         </section>
 
-        <section class="row">
-            <section class="crystal-body">
-                <section class="crystals">
-                    <button id="button-red" class="btn btn-primary crystal" value="red">
-                        <img id="redcrys" src="assets/images/red.png">
-                    </button>
-                    <button id="button-blue" class="btn btn-primary crystal" value="blue">
-                        <img id="bluecrys" src="assets/images/blue.png">
-                    </button>
-                    <button id="button-pink" class="btn btn-primary crystal" value="pink">  
-                        <img id="pinkcrys" src="assets/images/pink.png">
-                    </button>
-                    <button id="button-purple" class="btn btn-primary crystal" value="purple">
-                        <img id="purplecrys" src="assets/images/purple.png">
-                    </button>
+        <section class="crystal-body">
+            <section class="container">
+                <section class="row">
+                    <section class="crystals">
+                        <button id="button-red" class="btn btn-light crystal" value="red">
+                            <img id="redcrys" src="assets/images/red.png">
+                        </button>
+                        <button id="button-blue" class="btn btn-light crystal" value="blue">
+                            <img id="bluecrys" src="assets/images/blue.png">
+                        </button>
+                        <button id="button-pink" class="btn btn-light crystal" value="pink">  
+                            <img id="pinkcrys" src="assets/images/pink.png">
+                        </button>
+                        <button id="button-purple" class="btn btn-light crystal" value="purple">
+                            <img id="purplecrys" src="assets/images/purple.png">
+                        </button>
+                    </section>
                 </section>
             </section>
         </section>

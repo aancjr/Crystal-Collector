@@ -5,6 +5,33 @@ body {
     margin: auto;
 }
 
+.header {
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+#game-title {
+    margin: auto;
+}
+
+#game-details {
+    margin-top: 10px;
+}
+
+
+#wins {
+    text-align: left;
+}
+
+#losses {
+    text-align: left;
+}
+
+.crystals {
+    margin: auto;
+}
+
 img {
     width: 200px;
     height: 200px;
