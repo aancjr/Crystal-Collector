@@ -39,12 +39,14 @@ $(document).ready(function(event) {
             if (totalScore > computerPick) {
                 losses++;
                     $("#losses").text("Losses: " + losses);
+                alert("You Lost! Try again!");
                 resetGame ();
             }
 
             if (totalScore === computerPick) {
                 wins++;
                     $("#wins").text("Wins: " + wins);
+                alert("WINNER WINNER, CHICKEN DINNER!");
                 resetGame ();
             }
         })
@@ -57,12 +59,14 @@ $(document).ready(function(event) {
             if (totalScore > computerPick) {
                 losses++;
                     $("#losses").text("Losses: " + losses);
+                alert("You Lost! Try again!");
                 resetGame ();
             }
 
             if (totalScore === computerPick) {
                 wins++;
                     $("#wins").text("Wins: " + wins);
+                alert("WINNER WINNER, CHICKEN DINNER!");
                 resetGame ();
             }
         })
@@ -75,12 +79,14 @@ $(document).ready(function(event) {
             if (totalScore > computerPick) {
                 losses++;
                     $("#losses").text("Losses: " + losses);
+                alert("You Lost! Try again!");
                 resetGame ();
             }
             
             if (totalScore === computerPick) {
                 wins++;
                     $("#wins").text("Wins: " + wins);
+                alert("WINNER WINNER, CHICKEN DINNER!");
                 resetGame ();
             }
         })
@@ -93,12 +99,14 @@ $(document).ready(function(event) {
             if (totalScore > computerPick) {
                 losses++;
                     $("#losses").text("Losses: " + losses);
+                alert("You Lost! Try again!");
                 resetGame ();
             }
 
             if (totalScore === computerPick) {
                 wins++;
                     $("#wins").text("Wins: " + wins);
+                alert("WINNER WINNER, CHICKEN DINNER!");
                 resetGame ();
             } 
         })        

@@ -1,12 +1,19 @@
 body {
-    background-image: url("../images/diamond_upholstery.png");
+    /* background-image: url("../images/diamond_upholstery.png"); */
     text-align: center;
     max-width: 960px;
     margin: auto;
 }
 
+.header, #game-details, .comp-total-score, .wins-losses {
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .header {
-    background-color: white;
+    margin-top: 10px;
     width: 100%;
     padding: 10px;
 }
@@ -16,23 +23,34 @@ body {
 }
 
 #game-details {
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.comp-total-score {
+    padding: 10px;
+}
+
+.crystal-body {
     margin-top: 10px;
-}
-
-
-#wins {
-    text-align: left;
-}
-
-#losses {
-    text-align: left;
+    padding: 10px 0 10px 0;
 }
 
 .crystals {
+    width: 100%;
     margin: auto;
+    
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 100%;
+    height: 210px;
+    padding: 5px;    
+}
+
+.wins-losses {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
 }
