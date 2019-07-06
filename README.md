@@ -1,6 +1,6 @@
-# unit-4-game
+# Crystal Collector
 
-Unit-4-Game's Crystal Collector is created using jQuery.
+Crystal Collector is created using jQuery.
 
 In the Crystal Collector, the computer will generate a random number from 19 to 120. The user will have to click the crystal's to add up to the randomly generated number, without knowing how the value of each crystal. If guessed correctly, player wins. If incorrect, computer wins. Player can play again without restarting the webpage.
 
