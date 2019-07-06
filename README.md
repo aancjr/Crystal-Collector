@@ -8,4 +8,4 @@ This project is designed to become familiar with the jQuery language and to cont
 
 # Link:
 
- https://aancjr.github.io/unit-4-game/
+https://aancjr.github.io/Crystal-Collector/
