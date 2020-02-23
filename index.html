@@ -1,93 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Crystal Collector!</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
 
-<body>
-
-    <section class="header">
-        <section class="row">
+  <body>
+    <section class="main d-flex h-100">
+      <div class="container my-auto">
+        <div class="header">
+          <div class="row">
             <h1 id="game-title">Crystal Collector!</h1>
+          </div>
+        </div>
+
+        <section class="instructions">
+          <div class="container">
+            <div class="row">
+              <p class="mb-0 instructions-text">
+                You will be given a random number at the start of the game.
+                <br />
+                There are four crystals below. By clicking on crystal you will add a specific amount of points to your
+                total score.
+                <br />
+                You win the game by matching your total score to random number, you lose the game if your total score
+                goes above the random number.
+                <br />
+                The value of each crystal is hidden from you until you click on it.
+                <br />
+                Each time when the game starts, the game will change the values of each crystal.
+              </p>
+            </div>
+          </div>
         </section>
-    </section>
-    
-    <section class="instructions">
-        <section class="container">
-            <section class="row">
-                <p id="game-details">You will be given a random number at the start of the game.
-                    <br>
-                    There are four crystals below. By clicking on crystal you will add a specific amount
-                    of points to your total score.
-                    <br>
-                    You win the game by matching your total score to random number, you lose the game if your
-                    total score goes above the random number.
-                    <br>
-                    The value of each crystal is hidden from you until you click on it.
-                    <br>
-                    Each time when the game starts, the game will change the values of each crystal.
-                </p>
-            </section>
-        </section>
-    </section>
 
         <section class="comp-total-score">
-            <section class="container">
-                <section class="row">
-                    <section class="col-md-6">
-                        <h3 id="computer-pick"></h3>
-                    </section>
-                    <section class="col-md-6">
-                        <h3 id="total-score">Total Score: </h3>
-                    </section>
-                </section>
-            </section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h3 id="computer-pick" class="mb-0"></h3>
+              </div>
+              <div class="col-md-6">
+                <h3 id="total-score" class="mb-0">Total Score:</h3>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section class="crystal-body">
-            <section class="container">
-                <section class="row">
-                    <section class="crystals">
-                        <button id="button-red" class="btn btn-light" value="red">
-                            <img id="redcrys" src="assets/images/red.png">
-                        </button>
-                        <button id="button-blue" class="btn btn-light" value="blue">
-                            <img id="bluecrys" src="assets/images/blue.png">
-                        </button>
-                        <button id="button-pink" class="btn btn-light" value="pink">  
-                            <img id="pinkcrys" src="assets/images/pink.png">
-                        </button>
-                        <button id="button-purple" class="btn btn-light" value="purple">
-                            <img id="purplecrys" src="assets/images/purple.png">
-                        </button>
-                    </section>
-                </section>
-            </section>
+          <div class="container">
+            <div class="row">
+              <div class="crystals">
+                <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                  <button id="button-red" class="btn btn-light" value="red">
+                    <img id="redcrys" src="assets/images/red.png" />
+                  </button>
+                  <button id="button-blue" class="btn btn-light" value="blue">
+                    <img id="bluecrys" src="assets/images/blue.png" />
+                  </button>
+                  <button id="button-pink" class="btn btn-light" value="pink">
+                    <img id="pinkcrys" src="assets/images/pink.png" />
+                  </button>
+                  <button id="button-purple" class="btn btn-light" value="purple">
+                    <img id="purplecrys" src="assets/images/purple.png" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section class="wins-losses">
-            <section class="container">
-                <sectin class="row">
-                    <section class="col-md-6">
-                        <h3 id="wins">Wins:</h3>
-                    </section>
-                    <section class="col-md-6">
-                        <h3 id="losses">Losses:</h3>
-                    </section>
-                </sectin>
-            </section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h3 id="wins" class="mb-0">Wins:</h3>
+              </div>
+              <div class="col-md-6">
+                <h3 id="losses" class="mb-0">Losses:</h3>
+              </div>
+              <div></div>
+            </div>
+          </div>
         </section>
-
-            
-    
-    
-
-</body>
+      </div>
+    </section>
+  </body>
 </html>
